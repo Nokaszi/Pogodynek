@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradirnt"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/sunrise"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <TextView
+        android:id="@+id/sunset"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/pressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <TextView
+        android:id="@+id/pressure"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sunset"
+        app:layout_constraintBottom_toTopOf="@+id/temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <TextView
+        android:id="@+id/temp"
+        style="@style/TextAppearance.MdcTypographyStyles.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/button"
+        style="extAppearance.MdcTypographyStyles.Button"
+        android:layout_width="146dp"
+        android:layout_height="64dp"
+        android:text="Odśwież"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        style="@style/TextAppearance.MdcTypographyStyles.Headline4"
+        app:layout_constraintBottom_toTopOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="14sp"
+        android:layout_height="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/pressure"
+        app:layout_constraintEnd_toStartOf="@+id/description"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/description"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="14sp"
+        android:layout_height="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pressure"
+        app:layout_constraintEnd_toStartOf="@+id/pressure"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pressure"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pressure" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="14sp"
+        android:layout_height="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sunset"
+        app:layout_constraintEnd_toStartOf="@+id/sunset"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sunset"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/sunset" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="14sp"
+        android:layout_height="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sunrise"
+        app:layout_constraintEnd_toStartOf="@+id/sunrise"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sunrise"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/sunrise" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="14sp"
+        android:layout_height="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/temp"
+        app:layout_constraintEnd_toStartOf="@+id/temp"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pressure"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
